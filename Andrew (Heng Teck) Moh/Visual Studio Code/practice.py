@@ -1,18 +1,17 @@
 #%%
 print("Hello world")
 
-def yesman(x + y):
-    x = 1
-    y = 10
-    return yesman
-    
+#%% --define function
+def yesman():
+    print("I'm the best!")
 
-
+yesman()   
 
 # %%
 Digimon = ["Pikachu", "Ratata", "Mewtwo"]
 for x in Digimon:
     print (x)
+
 # %%
 def myfunction ():
         print ("I am so hungry")
