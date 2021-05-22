@@ -7,31 +7,28 @@ def yesman():
 
 yesman()   
 
-# %%
+# %% iteration
 Digimon = ["Pikachu", "Ratata", "Mewtwo"]
 for x in Digimon:
     print (x)
 
-# %%
-def myfunction ():
-        print ("I am so hungry")
+# %% need to fix input prompt x,y,z values
+x = input()
+y = input()
+z = input()
 
-myfunction()
-
-# %%
-def triangle() ()
 if x == y == z:
     print("Equilateral triangle")
+
 elif x == y or y == z or z == x:
     print("Isosceles triangle")
+
 else:
     print("Scalene triangle")
 
-x = 1
-y = 1
-z = 1
 
-# %%
+
+# %% upper case & stringing strings.
 a = "Hello, World!"
 print(a.upper())
 
