@@ -45,12 +45,12 @@ pipeline {
         }
       }
     }
-    stage('Deploy app to API01') {
+    stage('Deploy app to WEB02') {
       steps {
-        sh "ssh api01 rm -rf /home/${SSHUSER}/conduit"
-        sh "scp -r ${WORKSPACE}/conduit-ui/dist api01:/home/${SSHUSER}/conduit"
-        sh "ssh api01 sudo rm -rf ${WWWROOT}/conduit"
-        sh "ssh api01 sudo cp -r /home/${SSHUSER}/conduit ${WWWROOT}/conduit"
+        sh "ssh web02 rm -rf /home/${SSHUSER}/conduit"
+        sh "scp -r ${WORKSPACE}/conduit-ui/dist web02/home/${SSHUSER}/conduit"
+        sh "ssh web02 sudo rm -rf ${WWWROOT}/conduit"
+        sh "ssh web02 sudo cp -r /home/${SSHUSER}/conduit ${WWWROOT}/conduit"
       }
     }
   }
