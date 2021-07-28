@@ -47,7 +47,6 @@ pipeline {
     }
     stage('Deploy app to WEB02') {
       steps {
-        sh "ssh web02 sudo rm -rf ${WWWROOT}/conduit"
         sh "ssh web02 sudo cp -r /home/${SSHUSER}/conduit ${WWWROOT}/conduit"
       }
     }
