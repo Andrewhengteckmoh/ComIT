@@ -47,8 +47,7 @@ pipeline {
     }
     stage('Deploy app to WEB01') {
       steps {
-        sh "scp -r ${WORKSPACE}/conduit-ui/dist/* web01/home/${SSHUSER}/conduit"
-        sh "ssh web01 sudo cp -r /home/${SSHUSER}/conduit ${WWWROOT}/conduit"
+        sh "ssh web01 sudo cp -r /home/amoh/${SSHUSER}/conduit/* ${WWWROOT}/conduit"
       }
     }
   }
